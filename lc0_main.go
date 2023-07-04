@@ -1,6 +1,4 @@
 // A new client to work with the lc0 binary.
-//
-//
 package main
 
 import (
@@ -82,10 +80,10 @@ type Settings struct {
 	Localhost string
 }
 
-const inf = "inf"
+const inf = "inf1"
 
 /*
-	Reads the user and password from a config file and returns empty strings if anything went wrong.
+Reads the user and password from a config file and returns empty strings if anything went wrong.
 */
 func readSettings(path string) (string, string, string) {
 	settings := Settings{}
@@ -105,7 +103,7 @@ func readSettings(path string) (string, string, string) {
 }
 
 /*
-	Prompts the user for a username and password and creates the config file.
+Prompts the user for a username and password and creates the config file.
 */
 func createSettings(path string) (string, string) {
 	settings := Settings{}
